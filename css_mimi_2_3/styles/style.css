@@ -3,3 +3,17 @@
 	box-sizing: border-box;
 	margin: 0;
 }
+.container{
+	width: 300px;
+	height: 200px;
+	padding: 20px;
+	margin: calc(50vh - 100px) auto;
+	background: url("../images/star.svg") no-repeat  #FF0066;
+	/*关键属性以及属性值 background-position 的扩展语法方案*/
+	/*background-position: bottom 10px right 20px;*/
+	/*第二种解决方案 background-origin 设置为 content-box*/
+	/*background-origin: content-box;*/
+	/*以上两种方法各有局限 与 优势*/
+	/*第三种 calc()解决方案*/
+	background-position: calc(100% - 20px) calc(100% - 10px);
+}
